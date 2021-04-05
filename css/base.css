@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+
+
+/* nanum-myeongjo-regular - korean */
+@font-face {
+  font-family: 'NotoSansKR_T';
+  font-style: normal;
+  font-weight: 100;
+  src: 	local('NotoSansKR_T'),
+  		url('font/NotoSansKR-Thin-Hestia.eot'), /* IE9 Compat Modes */
+  		url('font/NotoSansKR-Thin-Hestia.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       	url('font/NotoSansKR-Thin-Hestia.woff') format('woff'), /* Modern Browsers */
+       	url('font/NotoSansKR-Thin-Hestia.ttf') format('truetype'), /* Safari, Android, iOS */
+	  	url('font/NotoSansKR-Thin-Hestia.otf') format('otf') /* Safari, Android, iOS */
+}
+
+/* nanum-myeongjo-regular - korean */
+@font-face {
+  font-family: 'NotoSansKR_DL';
+  font-style: normal;
+  font-weight: 300;
+  src: 	local('NotoSansKR_DL'),
+  		url('font/NotoSansKR-DemiLight-Hestia.eot'), /* IE9 Compat Modes */
+  		url('font/NotoSansKR-DemiLight-Hestia.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       	url('font/NotoSansKR-DemiLight-Hestia.woff') format('woff'), /* Modern Browsers */
+       	url('font/NotoSansKR-DemiLight-Hestia.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+
+@font-face {
+  font-family: 'NotoSansKR_M';
+  font-style: normal;
+  font-weight: 600;
+  src: 	local('NotoSansKR_M'),
+  		url('font/NotoSansKR-Medium-Hestia.eot'), /* IE9 Compat Modes */
+  		url('font/NotoSansKR-Medium-Hestia.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       	url('font/NotoSansKR-Medium-Hestia.woff') format('woff'), /* Modern Browsers */
+       	url('font/NotoSansKR-Medium-Hestia.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+
+@font-face {
+  font-family: 'NotoSansKR_B';
+  font-style: normal;
+  
+  src: 	local('NotoSansKR_B'),
+  		url('font/NotoSansKR-Bold-Hestia.eot'), /* IE9 Compat Modes */
+  		url('font/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       	url('font/NotoSansKR-Bold-Hestia.woff') format('woff'), /* Modern Browsers */
+       	url('font/NotoSansKR-Bold-Hestia.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'NotoSansKR_BB';
+  font-style: normal;
+  
+  src: 	local('NotoSansKR_BB'),
+  		url('font/NotoSansKR-Black-Hestia.eot'), /* IE9 Compat Modes */
+  		url('font/NotoSansKR-Black-Hestia.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       	url('font/NotoSansKR-Black-Hestia.woff') format('woff'), /* Modern Browsers */
+       	url('font/NotoSansKR-Black-Hestia.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+
+
+html {overflow-y:scroll;}
+html, body {width:100%;}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video ,textarea, input, textarea{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "NotoSansKR_DL";
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "NotoSansKR_DL";
+	position: relative;
+}
+
+
+article,aside,canvas,details,figcaption,figure, footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+b, h2 {font-family: "NotoSansKR_B";}
+
+ol, ul				{list-style: none;}
+blockquote, q		{quotes: none; }s
+blockquote:before, 
+blockquote:after,
+q:before, q:after	{content: ''; content: none;}
+table			{border-collapse: collapse; border-spacing: 0;}
+legend			{display:none;}
+
+a, a:hover {color:#444; text-decoration:none;}
+img	{border:0;}
+
+* {-webkit-text-size-adjust:none;} /* 아이폰 가로시 글자크기 자동조정방지 */
+input[type=text],
+input[type=password]{-webkit-border-radius:0; -webkit-appearance: none; border: .1rem solid #ddd; padding: 5px; vertical-align: middle}
+select	{-webkit-border-radius:0; border:.1rem solid #ddd; padding:3px; vertical-align: middle}
+textarea	{-webkit-border-radius:0; -webkit-appearance: none; border:.1rem solid #ddd; padding:1rem; box-sizing:border-box; width:100%;}
+
+.clearfix		{*zoom:1;} /* ie를 위한 핵 */
+.clearfix:after	{content:" "; display:block; clear:both; height:0; visibility:hidden;}/* 기타 브라우져 */
+
+.left		{float:left;}
+.right		{float:right;}
+.alignL		{text-align:left !important;}
+.alignR		{text-align:right !important;}
+.alignC		{text-align:center !important;}
+
+
+.w100		{width:100% !important;}
+.w50		{width:50% !important;}
+.w45		{width:45% !important;}
+.w80		{width:80% !important;}
+.w70		{width:70% !important;}
+.w60		{width:60% !important;}
+.w30		{width:30% !important;}
+.w20		{width:20% !important;}
+.w10		{width:10% !important;}
+
+.mgT0	{margin-top:rem;margin-bottom:1rem !important;}
+.mgT5	{margin-top:5px !important;}
+.mgT10	{margin-top:1rem !important;}
+.mgT20	{margin-top:2rem !important;}
+.mgT30	{margin-top:3rem !important;}
+.mgL10	{margin-left:1rem !important;}
+.mgB10	{margin-bottom:1rem !important;}
+.mgB20	{margin-bottom:2rem !important;}
+.mgB50	{margin-bottom:5rem !important;}
+
+.mg20	{margin: 2rem 0 !important;}
+.mg30	{margin: 3rem 0 !important;}
+.mg0 	{margin: 0		!important;}
+
+
+.pd20 	{padding: 2rem 0 !important;}
+.pd30 	{padding: 3rem 0 !important;}
+
+.t_center {text-align: center !important; }
+
+.top0 {top: 0 !important; }
+.bom0 {bottom: 0 !important;}
+.rig0 {right: 0 !important;}
+
+.c_red {color: #ff4747 !important;}
+
+
+.color3 {color: #ec6706 !important;}
