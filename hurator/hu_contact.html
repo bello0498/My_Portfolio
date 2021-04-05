@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ko"><head>
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<meta charset="utf-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expire" content="-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link rel="stylesheet" type="text/css" href="css/hu_style.css?_=6">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script href="js/basic.js"></script>    
+
+<title>HURATOR</title>
+</head>
+
+<body>
+
+
+<div id="wrap">
+
+
+	<div class="header">
+		
+		<div class="all_menu_btn">
+			<button id="allBtn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		
+		<div class="logo">
+			<a href="hu_main.html"></a>
+		</div>
+		
+		<div class="us_btn">
+			<a href="hu_contact.html">
+				CONTACT US
+			</a>
+		</div>
+		
+		<div class="top_sub_cate">
+			<ul>
+				
+				<li>
+					<a href="hu_company.html">Company</a>
+				</li>
+				<li>
+					<a href="hu_business.html">Business</a>
+				</li>
+				<li>
+					<a href="hu_huri.html">HURI</a>
+				</li>
+				
+			</ul>
+		</div>
+		
+	</div>
+	
+	<div class="black_bg">
+		<div class="all_menu_list">
+			<div class="closeBtn">
+				<button>
+				</button>
+			</div>
+			<div class="logo">
+
+			</div>
+			
+			<ul>
+				<li class="main_list">
+					<a href="hu_company.html">Company</a>
+					
+				</li>
+				<li class="main_list">
+					<a href="hu_business.html">Business</a>
+					
+				</li>
+				<li class="main_list">
+					<a href="hu_huri.html">HURI</a>
+				</li>
+				
+				<li class="main_list">
+					<a href="">NEWS</a>
+				</li>
+				
+				<li class="main_list">
+					<a href="hu_notice.html">Notice</a>
+				</li>
+				
+				<li class="main_list">
+					<a href="hu_contact.html">Contact Us</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+
+	<div id="contrainer">
+
+		<div class="top_main slide contact_main">
+
+			<div class="main_sec contact">
+				<div class="sec01_on">
+				
+					<p>
+						<b class="text_r_show" data-text="CONTACT US">CONTACT US</b>
+					</p>
+					
+					<div class="email_input">
+					
+						<input type="text" placeholder="이름을 입력해주세요.">
+
+						<input type="text" placeholder="E-mail을 입력해주세요.">
+
+						<textarea></textarea>
+
+
+						<div class="btn_box">
+							<div class="line_btn">
+								<a href="">
+									보내기
+								</a>
+							</div>
+						</div>
+
+					</div>
+				
+				</div>
+				
+				
+			</div>
+
+		</div>
+				
+	</div>	
+		
+	<div class="footer slide">
+
+		<div class="f_logo">
+			
+		</div>
+		<div class="f_info alignCC">
+			<span>서울시 용산구 한강대로71길 4  2층  4, Hangang-daero 71-gil, Yongsan-gu, Seoul, Republic of Korea 2f</span><br>
+			<span>tel. 02-561-5222</span>
+			<span>fax. 02-547-5707</span><br>
+			<span>copyright  2019 hurator all right reserved</span>
+		</div>
+		<div class="f_sns">
+			<a class="sns_btn sns01"></a>
+			<a class="sns_btn sns02"></a>
+			<a class="sns_btn sns03"></a>
+			<a class="sns_btn sns04"></a>
+		</div>
+
+	</div>
+
+
+</body>
+</html>
+
+<script>
+
+	$(window).scroll(function(){
+		var st = $(this).scrollTop();
+		if(st >= 90){
+			$('.header').addClass('fix');
+			
+		}else{
+			$('.header').removeClass('fix');
+			
+		}
+	});
+	
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links in navbar + footer link
+	  $(window).scroll(function() {
+		$(".slideanim").each(function(){
+		  var pos = $(this).offset().top;
+
+		  var winTop = $(window).scrollTop();
+			if (pos < winTop + 600) {
+			  $(this).addClass("slide");
+			}
+		});
+		  
+		$(".l_slideanim").each(function(){
+		  var pos = $(this).offset().top;
+
+		  var winTop = $(window).scrollTop();
+			if (pos < winTop + 600) {
+			  $(this).addClass("left_slide");
+			}
+		});
+	  });
+	});
+	
+	$(document).ready(function(e) {
+        $('#allBtn').click(function(){
+			$('.black_bg').addClass('on');
+			$('.all_menu_list').addClass('on');
+
+		});
+		
+		$('.closeBtn').click(function(){
+			$('.black_bg').removeClass('on');
+			$('.all_menu_list').removeClass('on');
+
+		});
+    });
+
+	
+</script>
