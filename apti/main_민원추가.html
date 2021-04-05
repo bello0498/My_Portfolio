@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>아파트아이</title>
+<link rel="stylesheet" href="css/n_layout.css" />
+
+<script src="js/jquery-3.3.1.js"></script>
+
+<script>
+
+
+
+</script>
+
+</head>
+
+<body>
+
+<!-- 헤더 -->
+<div class="header">
+   	<div class="logo"></div>
+	<div class="my_info">
+		이지스아파트<br>
+		101동 101호 홍길동 님
+	</div>
+	<div class="h_Btn">
+		<div class="notify">
+        	<span class="n_icon"></span>
+			<span class="caption">알림</span>
+		</div>
+		<div class="all_menu_box">
+            <input type="checkbox" class="All_check" id="All">
+            <label class="all_menu" for="All">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="m_txt">메뉴</span>
+            </label>
+        </div>
+	</div>
+</div>
+<!-- 헤더 -->
+
+<!-- 
+<div class="h_Btn">
+    <div class="notify">
+        <span class="caption">알림</span>
+    </div>
+    <div class="all_menu_box">
+        <input type="checkbox" class="All_check" id="All">
+        <label class="all_menu" for="All">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="m_txt">메뉴</span>
+        </label>
+    </div>
+</div>
+-->
+
+<!-- 전체메뉴 영역 -->
+<div class="layer_bg showHide" style="display: none;">
+	<div class="all_menu_view">
+		<span class="caption">전체메뉴 시작</span>
+		<div class="top_btn">
+			<div class="home">
+				<span class="caption">홈메뉴</span>
+			</div>
+			<div class="close_btn">
+				<span class="caption">닫기</span>
+			</div>
+		</div>
+        
+		<div class="top_box">
+        	<span class="caption">기본 내정보 부분</span>
+			<div class="my_info_view">
+				<p class="my_name_info">
+					<b>홍길동</b> <span>님</span>
+				</p>
+				<span class="my_apt_info">
+					이지스아파트 101동 101호					
+				</span>
+			</div>
+
+			<ul class="basic_link_btn">
+            	<span class="caption">내정보 간편 링크</span>
+				<li class="basic_list">
+					<a class="apt_noti">관리소 공지</a>
+				</li>
+				<li class="basic_list">
+					<a class="my_icon">내 정보</a>
+				</li>
+				<li class="basic_list">
+					<a class="question">이용안내</a>
+				</li>
+				<li class="basic_list">
+					<a class="setup">설정</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="mid_box">
+        	<span class="caption">추천부분</span>
+			<h4 class="tit">
+				아파트아이 생활 추천
+			</h4>
+			<ul class="special_menu menu_list">
+            	<li class="menu_cont">
+                	<a href="#" class="menuBtn maint">
+                    	관리비
+                    </a>
+                </li>
+                <li class="menu_cont">
+                	<a href="#" class="menuBtn apt_info">
+                    	입주민 소식
+                    </a>
+                </li>
+                <li class="menu_cont">
+                	<a href="#" class="menuBtn event">
+                    	이벤트
+                    </a>
+                </li>
+                <li class="menu_cont">
+                	<a href="#" class="menuBtn point">
+                    	포인트전환
+                    </a>
+                </li>
+			</ul>
+		</div>
+		
+		<div class="all_menu_list">
+			<span class="caption">아파트아이 전체 카테고리</span>
+			<ul class="a_m_tab">
+				<li class="a_tab_list">
+					<a class="tab_m active">
+						주요 서비스
+					</a>
+				</li>
+				<li class="a_tab_list">
+					<a class="tab_m">
+						우리아파트 소식
+					</a>
+				</li>
+			</ul>
+            
+
+			<ul class="a_m_list_box">
+       			<span class="caption">주요서비스 리스트</span>	
+				<li class="one_list">
+					<a class="txt_list">관리비 조회</a>					
+				</li>
+				<li class="one_list">
+					<a class="txt_list">에너지 조회</a>					
+				</li>
+				<li class="one_list">
+					<a class="txt_list">관리비 납부</a>
+					<div class="sub_list">
+						<a class="s_txt_list">이번달 관리비 납부</a><a class="s_txt_list">다음달 관리비 차감</a>
+						<a class="s_txt_list">납부내역 조회</a><a class="s_txt_list">자동이체내역 조회</a>
+					</div>
+				</li>
+				<li class="one_list">
+					<a class="txt_list">관리비 할인</a>
+					<div class="sub_list">
+						<a class="s_txt_list">아파트캐쉬 조회</a><a class="s_txt_list">아파트캐쉬 모으기</a>
+						<a class="s_txt_list">아파트캐쉬 선물하기</a><a class="s_txt_list">쿠폰 등록하기</a>
+					</div>					
+				</li>
+				<li class="one_list">
+					<a class="txt_list">이벤트</a>					
+				</li>
+				<li class="one_list">
+					<a class="txt_list">택배발송</a>					
+				</li>
+			</ul>
+		</div>
+        <div class="layer_banner">
+        	<span class="caption">배너영역</span>
+        	<a>
+            	<img src="images/banner.png" />
+            </a>
+        </div>
+	</div>
+</div>
+
+<!-- 메인 컨텐츠 영역 -->
+<div id="warp" class="">
+
+    <!-- 메인 기본 영역 -->     
+    <div class="main_box">
+        
+      	<!-- 상단 관리비 메인 영역 부분 -->
+		<div class="mBox top_maint b_Green slide">
+        	<div class="t_box">
+            	<div class="month_tab">
+                	<a class="m_tab">12월분</a>
+                	<a class="m_tab active">1월분</a>
+                	<a class="m_tab">2월분</a>
+                </div>
+                <div class="sticker_box">
+                	<span class="sticker_info basic">카드납부예정</span>
+                    <!-- 
+                    <span class="sticker_info warning">미납</span>
+                    <span class="sticker_info payment">납부하기</span>
+                    -->
+                </div>
+            </div>
+            <!-- 관리비 금액 부분 -->
+            <div class="maint_sum">
+            	<a class="main_num">
+                	<b>201,850</b>원
+                </a>
+            </div>
+            <!-- 펼치기 상세내역 영역 -->
+            <div class="maint_detail">
+            	<div class="fold_btn">
+                	기한부터 관련 내역보기
+                </div>
+                <div class="detail_hide">
+                    <p class="old_info">
+                        <span class="old_tit">전월대비</span>
+                        <b class="i_num up">
+                            28,000원 증가
+                        </b>
+                    </p>
+                    <!-- 납부기한, 이용기간 부분 -->
+                    <ul class="date_info">
+                        <li class="da_info">
+                            <span class="tit">납부기한</span><span class="in_txt">2020.02.28</span>
+                        </li>
+                        <li class="da_info">
+                            <span class="tit">이용기간</span><span class="in_txt">2020.01.01 ~ 01.31</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- 버튼영역 -->
+                    <div class="maint_b_box">
+                        <a class="ma_btn">
+                            관리비 납부
+                            <span class="arrow"></span>
+                        </a>
+                        <a class="ma_btn">
+                            관리비 상세보기
+                            <span class="arrow"></span>
+                        </a>
+                    </div>
+                    <!-- 할인 캐시 쿠폰 영역 -->
+                    <div class="discount_box">
+                        <h2 class="tit">
+                            할인
+                        </h2>
+                        <ul class="disc_cont">
+                            <li class="di_li cash">
+                                <span class="disc_tit">아파트캐쉬</span>
+                                <p class="disc_num">
+                                    <a class="disc_link">
+                                        <b class="num">20,000</b>원
+                                    </a>
+                                </p>
+                            </li>
+                            <li class="di_li coupon">
+                                <span class="disc_tit">쿠폰</span>
+                                <p class="disc_num">
+                                    <a class="disc_link">
+                                        <b class="num">1</b>장
+                                    </a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+             
+        <!-- 민원관리 영역 부분 -->
+        <div class="mBox banner_menu_type parcel_menu newMenu slide2">
+        	<div class="bann_menu_tit">
+            	<div class="badge_icon"><b>NEW</b></div>
+                <h3 class="main_t_tit">우리집 앞에서 택배 발송</h3>
+                <a class="">
+                	예약하기
+                </a>
+            </div>
+            <div class="bann_menu_img">
+				<img src="images/parcel_icon.svg">
+                <img src="images/parcel_icon_02.svg" style="widtH: 30px;" class="parcel_motion parcel_ani">
+                <div class="pitapat_ani"></div>
+            </div>            
+		</div>
+        
+        
+        <!-- 민원관리 영역 부분 -->
+        <div class="mBox banner_menu_type compl_menu newMenu slide2">
+        	<div class="bann_menu_tit">
+            	<div class="badge_icon"><b>NEW</b></div>
+                <h3 class="main_t_tit">관리사무소가 답하다</h3>
+                <a class="">
+                	생활민원 접수하기
+                </a>
+            </div>
+            <div class="bann_menu_img">
+				<img src="images/n_compl_icon.svg">
+                <img src="images/n_compl_icon_02.svg"  class="compl_motion compl_ani">
+                <div class="pitapat_ani"></div>
+            </div>
+            
+		</div>
+        
+        <!-- 자동이체 신청 영역 부분 -->
+        <div class="mBox banner_menu_type autoTrans newMenu slide2">
+        	<div class="bann_menu_tit">
+            	<div class="badge_icon"><b>NEW</b><div></div></div>
+                <h3 class="main_t_tit">관리비 연체 걱정 끝!</h3>
+                <a class="">
+                	자동이체 신청하기
+                </a>
+            </div>
+            <div class="bann_menu_img">
+				<img src="images/auto_transfer.svg">
+                <div class="pitapat_ani"></div>
+            </div>
+		</div>
+        
+        <!--  민원현황 추가로 인한 관리사무소 영역 조정  -->
+        <div class="mBox apt_manage_info">
+        	<h2 class="tit">
+            	관리사무소 정보
+            </h2>
+            <ul class="ma_in_box">
+            	<li class="ma_info">
+                	<b class="tit">우리은행</b><span class="in_txt">1002-123-123456</span>
+                </li>
+            	<li class="ma_info">
+                	<b class="tit">예금주</b><span class="in_txt">이지스엔터프라이즈</span>
+                </li>
+                <li class="ma_info">
+                	<b class="tit w100 f_c_main">우리아파트 민원현황</b>
+                </li>
+            </ul>
+            <ul class="ma_in_box">
+            	<li class="ma_num mg0">
+                	<b class="tit">관리사무소</b><b class="in_num">02-6281-7225</b>
+                </li>
+            </ul>
+		</div>
+        
+        <div class="mBox apti_notice_box">
+        	<h2 class="tit">
+            	아파트아이 고객센터
+            </h2>
+            <ul class="apti_notice_menu">
+            	<li class="menu_cont">
+                	<a href="#" class="menuBtn qa">
+                    	자주하는 질문
+                    </a>
+                </li>
+                <li class="menu_cont">
+                	<a href="#" class="menuBtn noti_apti">
+                    	공지사항
+                    </a>
+                </li>
+                <li class="menu_cont">
+                	<a href="#" class="menuBtn one_apti">
+                    	1:1 문의
+                    </a>
+                </li>
+			</ul>
+        </div>
+    
+    	
+    </div>
+  
+        
+        
+        
+    
+</div>
+
+
+</body>
+
+<script>
+
+	
+	$('#warp').scroll(function(){
+		var st = $('#warp').scrollTop();
+		console.log(st);
+		if(st >= 1){
+			$('.header').addClass('fix');
+			$('#warp').addClass('on');			
+		}else{
+			$('.header').removeClass('fix');
+			$('#warp').removeClass('on');
+			
+		}
+	});
+	
+	$(document).ready(function(){
+		var showList = false;    	
+		var AllMenuView = false;    	
+
+		$('.fold_btn').click(function(){
+			if(showList){
+				$('.fold_btn').removeClass('active');
+				$('.detail_hide').removeClass('on');
+				showList = false;
+			}else{
+								
+				$('.fold_btn').addClass('active');
+				$('.detail_hide').addClass('on');
+				showList = true;
+			}
+		});
+		/*
+		$('.all_menu_box').click(function(){
+			if(AllMenuView){
+				$('.layer_bg').show();
+				$('.all_menu_view').addClass('on');
+				AllMenuView = false;
+				$('html, body').css({'overflow': 'hidden', 'height': '100%'});
+				$('#element').on('scroll touchmove mousewheel', function(event) {
+				  event.preventDefault();
+				  event.stopPropagation();
+				  return false;
+				});
+			}else{
+				$('.all_menu_view').removeClass('on');
+				$('.layer_bg').fadeOut(500);
+				AllMenuView = true;
+				$('#element').off('scroll touchmove mousewheel');
+			}
+		});
+		*/
+		
+		$('.all_menu_box').click(function(){
+			$('.layer_bg').show();
+			$('.all_menu_view').addClass('on');
+		});
+		
+		$('.close_btn').click(function(){
+			$('.all_menu_view').removeClass('on');
+			$('.layer_bg').fadeOut(500);
+		});
+
+	});
+
+	
+</script>
+
+
+</html>
