@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen"/>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<script>
+	
+$(document).ready(function(){
+	
+	$(window).scroll(function() {
+		$(".slideanim").each(function(){
+		  var pos = $(this).offset().top;
+	
+		  var winTop = $(window).scrollTop();
+			if (pos < winTop + 800) {
+			  $(this).addClass("slide");
+			  $('.header').removeClass("mainVer");
+			  $('.main_view').addClass("on");
+			} else if(winTop == 0) {
+				$('.header').addClass("mainVer");
+			}
+			$(".main_txt").click(function(){
+			
+			});
+		});
+		
+	});
+	
+});
+
+
+</script>
+
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+<div class="header mainVer">
+    <div class="warp">
+        <h1 class="logo">
+            <a href="">로고</a>
+        </h1>
+        <ul class="t_menu">
+            <li><a href="#" class="menuTab">Xp보이스란?</a></li>
+            <li><a href="#" class="menuTab">Xp보이스 신청</a></li>
+            <li><a href="#" class="menuTab">가이드</a></li>
+
+        </ul>
+    </div>
+</div>
+
+
+<div id="warpper">
+	<div class="ad_fixed_btn">
+    	<a href="">
+        	Xp보이스 신청
+        </a>
+    </div>
+	<div class="main_cont">
+    	<!-- 메인 상단 강조 노출 영역 -->
+        <div class="main_view scroll_view">
+            <div class="main_txt left_slide">
+                <h1>
+                    <b class="text_show" data-text="Xp보이스 .">Xp보이스 .</b>
+                </h1> 
+                <p>
+                    <span class="text_show2" data-text="방송, 더 이상 부담 갖지 마세요.">
+                    방송, 더 이상 부담 갖지 마세요.</span>
+                    <span class="text_show2" data-text="이지스엔터프라이즈의 ‘Xp보이스’를">
+                    이지스엔터프라이즈의 ‘Xp보이스’를</span>
+                    <span class="text_show2" data-text="부담없이 선택하세요.">
+                    부담없이 선택하세요.</span>
+                </p>
+            </div>
+            <div class="main_ca right_slide">
+            	<img src="images/main_ca.png" />
+            </div>
+            
+   		</div>
+        
+        
+    	<!-- 메인 상단 강조 노출 영역 -->
+        <div class="emphasis_box slideanim">
+        	<ul>
+            	<li>
+                	<span class="main_ico n01"></span>
+                    <b class="fontW600">고품질의 음성</b>
+                	<p>
+                    	Xp보이스는 사람 목소리에 가장 
+                        가까운 음성을 제공합니다. <br />
+                        별도의 설정이 필요하지 않고
+                        바로 사용할 수 있습니다.
+                    </p>
+                </li>
+                <li>
+                	<span class="main_ico n02"></span>
+                    <b class="fontW600">간편한 방송등록</b>
+                	<p>
+                    	사용자가 직관적으로 방송을 
+                        준비/등록할 수 있습니다.<br />
+                        자주 하는 방송, 예약방송 등의
+                        편리한 기능을 제공합니다.
+                    </p>
+                </li>
+                <li>
+                	<span class="main_ico n03"></span>
+                    <b class="fontW600">음악방송 서비스</b>
+                	<p>
+                    	입주민을 위해 주차장 등 
+                        공용부분에 음악방송을
+                        송출할수 있습니다.
+                    </p>
+                </li>
+                
+            </ul>
+        </div>
+        
+        <!-- Xp보이스 주요기능 -->
+        <div class="major_box slideanim">
+        	<div class="major_tit">
+            	<h2 class="fontWBB">
+                	Xp보이스 <b>주요기능</b>
+                </h2>
+            </div>
+        	<ul>
+            	<li>
+                	<span class="major_ico n01"></span>
+                	<p>
+                    	세대/호실별 방송하기
+                    </p>
+                </li>
+                <li>
+                	<span class="major_ico n02"></span>
+                	<p>
+                    	예약방송 지원
+                    </p>
+                </li>
+                <li>
+                	<span class="major_ico n03"></span>
+                	<p>
+                    	방송이력 관리
+                    </p>
+                </li>
+                <li>
+                	<span class="major_ico n04"></span>
+                	<p>
+                    	공용부분 음악방송
+                    </p>
+                </li>
+                <li>
+                	<span class="major_ico n05"></span>
+                	<p>
+                    	약 190여 방송 샘플 제공
+                    </p>
+                </li>
+                <li>
+                	<span class="major_ico n06"></span>
+                	<p>
+                    	내부 결재를 위한 출력지원
+                    </p>
+                </li>
+                
+            </ul>
+        </div>
+        
+        
+    </div>
+    <div class="footer">
+        <div class="f_bottom">
+            <p class="fontW100">
+                이지스엔터프라이즈(주) 대표 : 최병인 | 서울 금천구 가산디지털 2로 98 IT캐슬 2동 714호<br />
+                대표번호 : 02)2082-7200 | 팩스: 02)2082-7299<br />
+                copyright (c) aegis enterprise all right reserved.
+            </p>
+            <span class="f_logo"></span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
